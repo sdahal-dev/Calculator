@@ -112,3 +112,48 @@ body {
   border-radius: 2rem;
   background-color: rgb(67, 61, 61);
 }
+
+@media screen and (max-width: 490px) {
+  #container {
+    width: 95vw;
+    height: auto;
+    padding: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  #display {
+    width: 90vw;
+    font-size: 2rem;
+    height: 3rem;
+    max-width: 370px;
+  }
+
+  button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #container {
+    width: 92vw;
+    max-width: 350px;
+  }
+  #display {
+    width: 87vw;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  #container {
+    width: 88vw;
+    max-width: 300px;
+  }
+  #display {
+    width: 83vw;
+    max-width: 260px;
+  }
+}
