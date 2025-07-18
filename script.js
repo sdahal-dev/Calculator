@@ -1,4 +1,4 @@
-const diaplay = Number(document.getElementById("display"));
+const display = Number(document.getElementById("display"));
 
 function showDisplay(input) {
   display.value += input;
