@@ -15,10 +15,4 @@ This is a simple calculator built as a beginner project after learning JavaScrip
 3. Hit `=` to view the result.
 4. Press `C` to reset and start a new calculation.
 
-## 🧠 Highlights
-
-- Real-time DOM updates  
-- Clean, function-based logic  
-- Responsive user input handling
-
 
