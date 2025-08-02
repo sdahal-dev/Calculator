@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -9,6 +10,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 button {
   height: 5rem;
@@ -16,7 +19,7 @@ button {
   border-radius: 50%;
   font-size: 2rem;
   border-style: none;
-  margin: 0.4rem;
+  margin: 0.3rem 0.15rem;
   background-color: #1c1c1c;
   color: white;
   font-weight: bold;
@@ -75,6 +78,12 @@ button {
   inherits: false;
 }
 
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #display {
   width: 22.5rem;
   height: 4rem;
@@ -87,6 +96,7 @@ button {
   color: white;
   font-weight: 500;
   background-image: linear-gradient(to top, #0d47a1, #42a5f5);
+  margin: 0.2rem;
 }
 
 button:hover {
@@ -113,47 +123,37 @@ body {
   background-color: rgb(67, 61, 61);
 }
 
-@media screen and (max-width: 490px) {
-  #container {
-    width: 95vw;
-    height: auto;
-    padding: 0.5rem;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-
-  #display {
-    width: 90vw;
-    font-size: 2rem;
-    height: 3rem;
-    max-width: 370px;
-  }
-
-  button {
-    width: 3rem;
-    height: 3rem;
-    font-size: 1.2rem;
-    margin: 0.2rem;
-  }
+.calculator-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vh;
+  overflow: hidden;
+  z-index: 99;
 }
-@media screen and (max-width: 400px) {
-  #container {
-    width: 92vw;
-    max-width: 350px;
-  }
-  #display {
-    width: 87vw;
-    max-width: 320px;
+
+body {
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #2c3555, #1e3a28, #632a2a);
+}
+@media screen and (max-width: 470px) {
+  .calculator-wrapper {
+    transform: scale(0.8);
+    overflow: hidden;
+    position: relative;
+    width: 100vh;
   }
 }
 
-@media screen and (max-width: 340px) {
-  #container {
-    width: 88vw;
-    max-width: 300px;
+@media screen and (max-width: 428px) {
+  .calculator-wrapper {
+    transform: scale(0.75);
   }
-  #display {
-    width: 83vw;
-    max-width: 260px;
+}
+
+@media screen and (max-width: 380px) {
+  .calculator-wrapper {
+    transform: scale(0.7);
   }
 }
